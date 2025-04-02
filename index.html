@@ -257,23 +257,63 @@
             margin-top: 20px;
         }
 
+
+
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Optiscreen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="btn btn-get" href="https://pratham5685.github.io/Optiscreen/info.html">Installation</a>
-                </li>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; width: 100%; padding: 15px 0;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          
+          <!-- Brand (Extreme Left) -->
+          <a class="navbar-brand" href="#" style="font-size: 2rem; font-weight: bold; color: black; margin-left: 20px;">
+            Optiscreen
+          </a>
+      
+          <!-- Centered Navigation -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#features-section" style="font-size: 1.2rem; font-weight: 500; color: #333; padding: 8px 16px;">
+                  Features
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#pricing-section" style="font-size: 1.2rem; font-weight: 500; color: #333; padding: 8px 16px;">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#faq-section" style="font-size: 1.2rem; font-weight: 500; color: #333; padding: 8px 16px;">
+                  FAQ
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#footer" style="font-size: 1.2rem; font-weight: 500; color: #333; padding: 8px 16px;">
+                  Contact
+                </a>
+              </li>
             </ul>
+          </div>
+      
+          <!-- Installation Button (Extreme Right) -->
+          <a href="https://pratham5685.github.io/Optiscreen/info.html" 
+             class="btn" 
+             style="background-color: black; color: white; font-weight: bold; font-size: 1.125rem; padding: 10px 20px; border-radius: 4px; border: none; transition: all 0.3s ease; margin-right: 20px;">
+            Installation
+          </a>
+      
+          <!-- Mobile Hamburger Menu -->
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
         </div>
-    </nav>
+      </nav>
+      
+
+    
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -319,7 +359,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section  id="features-section"  class="features-section">
         <div class="container">
             <h2 class="features-title">Features</h2>
             <div class="feature-row">
@@ -386,7 +426,7 @@
                 <div class="carousel-item active">
                     <div class="testimonial-card">
                         <div class="testimonial-body">
-                            <p>Finally, a tool that makes screen time more comfortable. Love it!</p>
+                            <p>Finally, a tool that makes screen time more comfortable. Love it ❤️!</p>
                         </div>
                     </div>
                 </div>
@@ -427,6 +467,26 @@
         </div>
     </div>
 </section>
+
+<!-- Pricing Section -->
+<section id="pricing-section" class="pricing-section" style="padding: 80px 0; background-color: #ffffff; text-align: center; font-family: 'Inter', sans-serif;">
+    <div class="container">
+        <h2 class="section-title" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px; color: #000;">Simple & Transparent Pricing</h2>
+        <p class="section-subtitle" style="font-size: 1.5rem; color: #6c757d; margin-bottom: 30px;">One-time payment. No subscriptions. No hidden fees.</p>
+        
+        <div class="pricing-card" style="background: #f9f9f9; padding: 40px; border-radius: 12px; display: inline-block; max-width: 400px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h3 class="price" style="font-size: 3rem; font-weight: bold; color: #000; margin-bottom: 10px;">$7</h3>
+            <p class="price-desc" style="font-size: 1.25rem; color: #555; margin-bottom: 20px;">One-time payment for lifetime access</p>
+            <ul class="pricing-features" style="list-style: none; padding: 0; font-size: 1.2rem; color: #333; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;">✔️ Access to all current features</li>
+                <li style="margin-bottom: 10px;">✔️ Free updates & upcoming features</li>
+                <li style="margin-bottom: 10px;">✔️ No monthly fees, pay once & enjoy forever</li>
+            </ul>
+            <a href="https://pratham5685.github.io/Optiscreen/info.html" class="btn-get" style="background-color: black; color: white; font-weight: bold; border: none; font-size: 1.2rem; padding: 12px 24px; border-radius: 6px; transition: all 0.3s ease-in-out; display: inline-block; text-decoration: none;" onmouseover="this.style.backgroundColor='#333'" onmouseout="this.style.backgroundColor='black'">Get Optiscreen</a>
+        </div>
+    </div>
+</section>
+
 
 
     <!-- FAQ Section -->
